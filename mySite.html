@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <h1>Welcome to my HTML website!</h1>
+    <p>Press the button to get redirected to a page with famous social media and games.</p>
+    
+    <button id="myButton">Click Me</button>
+    
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+
+    <div>
+        <h1>About Me</h1>
+        <p>I am 46nq1 and I have a YouTube channel called 46nq1Roblox. I use ChatGPT to script.</p> <!-- Corrected closing <p> tag -->
+        <button id="anotherButton">YouTube Channel</button>
+    </div>
+
+    <!-- Embed Rickroll Video at the bottom -->
+    <div style="margin-top: 50px;">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autohide=1&showinfo=0" 
+            title="Rickroll" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Alternatively, a clickable link to the video in case the embed doesn't work -->
+    <div style="margin-top: 30px;">
+        <h3>If the video doesn't load, click below to watch it:</h3>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            Watch the Rickroll Video!
+        </a>
+    </div>
+
+    <script>
+        // JavaScript to handle button clicks
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "socialmedia.html"; // Redirect to another page
+        });
+
+        // Add functionality to redirect to your YouTube channel
+        document.getElementById("anotherButton").addEventListener("click", function() {
+            window.location.href = "https://www.youtube.com/@46nq1Roblox"; // Redirect to YouTube channel
+        });
+    </script>
+</body>
+</html>
+
+
